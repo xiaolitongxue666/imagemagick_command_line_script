@@ -9,8 +9,8 @@ magick identify -format "%[fx:w]" ./samples/3264x2448_Animesh_Bhargava.jpg
 filenam="./samples/3264x2448_Animesh_Bhargava.jpg"
 # echo $filenam
 
-width=`magick identify -format "%[fx:w]" ./samples/3024x4032_Jakub_Neskora.jpg`
-# height=$(magick identify -format '%h' "$filename")
+width=`magick identify -format "%[fx:w]" $filenam`
+height=`magick identify -format "%[fx:h]" $filenam`
 
 echo $width
-# echo $height
+echo $height
